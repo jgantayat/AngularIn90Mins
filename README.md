@@ -1,29 +1,51 @@
-
 # AngularIn90mins
+[![Ask DeepWiki](https://devin.ai/assets/askdeepwiki.png)](https://deepwiki.com/jgantayat/AngularIn90Mins)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.12.
+This project is an Angular application built as a learning exercise to demonstrate various core concepts of the Angular framework. The application features a to-do list manager that fetches data from a public API, a simple counter, and demonstrates concepts like signals, custom directives, and pipes.
 
-## Development server
+## Features
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+*   **Component-Based Architecture:** The application is structured with distinct components for the header, home page, to-do list, and individual to-do items.
+*   **Services & Dependency Injection:** A `TodosService` is used to encapsulate the logic for fetching to-do data, which is then injected into the `TodosComponent`.
+*   **HTTP Client:** Utilizes Angular's `HttpClient` to retrieve to-do items from the JSONPlaceholder API.
+*   **Routing:** Implements basic routing to navigate between the Home page and the Todos page.
+*   **Angular Signals:** Employs signals for modern, fine-grained state management in components like the `CounterComponent` and `TodosComponent`.
+*   **Custom Directive:** Includes a custom attribute directive, `HighlightCompletedTodoDirective`, to dynamically apply styles to completed to-do items.
+*   **Custom Pipe:** A `FilterTodosPipe` is used to filter the list of to-dos based on a user's search query.
+*   **Two-Way Data Binding:** Demonstrates `[(ngModel)]` for filtering the to-do list in real-time.
+*   **Component Communication:** Uses `@input` and `@output` properties for communication between parent and child components (`TodosComponent` and `TodosIteamsComponent`).
 
-## Code scaffolding
+## Getting Started
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Prerequisites
 
-## Build
+*   Node.js and npm
+*   Angular CLI (`npm install -g @angular/cli`)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### Installation & Setup
 
-## Running unit tests
+1.  **Clone the repository:**
+    ```sh
+    git clone https://github.com/jgantayat/AngularIn90Mins.git
+    ```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+2.  **Navigate to the project directory:**
+    ```sh
+    cd AngularIn90Mins
+    ```
 
-## Running end-to-end tests
+3.  **Install dependencies:**
+    ```sh
+    npm install
+    ```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+### Development Server
 
-## Further help
+Run `npm start` or `ng serve` for a development server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
-(The Angular code developed for learning new concepts of Angular in 90 minutes)
+## Available Scripts
+
+*   `npm start` or `ng serve`: Starts the development server.
+*   `npm run build`: Builds the project for production. The build artifacts are stored in the `dist/` directory.
+*   `npm run test`: Executes the unit tests via Karma.
+*   `npm run watch`: Builds the project and watches for file changes.
