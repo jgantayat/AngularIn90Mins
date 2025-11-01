@@ -1,0 +1,16 @@
+<h3>Todos List</h3>
+@if (!todoIteams().length){
+    <p>Loading...</p>
+}
+
+<form action="">
+<label for="filter">Filtering ToDos</label>
+<input name="searchTerm" [(ngModel)]="searchterm" placeholder="Search todos" />
+
+</form>
+
+<ul class="todos">
+    @for (todoitem of todoIteams() | filterTodos: searchterm(); track $index){
+       <app-todos-iteams (todoToggeled)="UpdatetoDoItem($event)" [todoItems]="todoitem" />
+    }
+</ul>

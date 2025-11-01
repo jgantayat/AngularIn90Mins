@@ -1,0 +1,13 @@
+/* .todos{
+    &_item{
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+} */
+
+.todos_item{
+    display: flex;
+        align-items: center;
+        gap: 8px;
+}
