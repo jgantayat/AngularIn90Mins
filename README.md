@@ -1,5 +1,4 @@
 # AngularIn90mins
-[![Ask DeepWiki](https://devin.ai/assets/askdeepwiki.png)](https://deepwiki.com/jgantayat/AngularIn90Mins)
 
 This project is an Angular application built as a learning exercise to demonstrate various core concepts of the Angular framework. The application features a to-do list manager that fetches data from a public API, a simple counter, and demonstrates concepts like signals, custom directives, and pipes.
 
